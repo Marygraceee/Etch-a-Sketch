@@ -36,7 +36,7 @@ function changetoBlack(){
   if (click = true){
   let bambini = document.querySelectorAll(".children");
 for (i = 0; i < bambini.length; i++){
-  bambini[i].addEventListener("mouseover", (e) => {
+  bambini[i].addEventListener("mousedown", (e) => {
 e.target.style.backgroundColor = "black";
   })
 }
@@ -46,15 +46,13 @@ function erase(){
   if (click = true){
   let bambini = document.querySelectorAll(".children");
 for (i = 0; i < bambini.length; i++){
-  bambini[i].addEventListener("mouseover", (e) => {
+  bambini[i].addEventListener("mousedown", (e) => {
 e.target.style.backgroundColor = "white";
   })
 }
 }}
 
-document.querySelector("body").addEventListener("click", (e) => {
+document.querySelector("body").addEventListener("click", () => {
   click = !click;
- console.log(e.target);
- console.log(Boolean, click);
 });
 
