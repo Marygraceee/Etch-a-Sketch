@@ -1,26 +1,43 @@
+body{
+    background-color: grey;
+}
+
 .titolo{
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
+h1 {
+    -webkit-text-stroke: 2px white;
+    font-size: 50px;
+}
+
+
 #container{
     display: grid;
-    background-color: red;
+    background-color: white;
+    border: 2px solid black;
     width: 500px;
     height: 500px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    
 }
 
 .children{
-    border: 2px solid black;
+    border: 0.1px solid black;
+  
+   
 }
 
 .startgame{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 50px; 
+    margin-top: 30px;
+    gap: 20px;
+    
 }
 
 button{
@@ -28,4 +45,13 @@ button{
     font-size: 20px;
     background-color: lightblue;
     color: black;
+    padding: 15px;
+    width: 200px;
+}
+
+.board{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
 }

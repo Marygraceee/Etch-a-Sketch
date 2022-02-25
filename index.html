@@ -11,12 +11,17 @@
     <div class="titolo">
     <h1>Draw your sketch!</h1>
     </div>
-<div  class="startgame"><button onclick="startDraw()">Start drawing!</button></div>
-<div id="container">
 
-
+    <div  class="startgame">
+    <button id="start" onclick="startDraw()">Create a grid!</button>
+    <button onclick="changetoBlack()">Black</button>
+    <button onclick="erase()">Erase</button>
+    <button onclick="reset()">Reset!</button>
 </div>
 
+<div class="board">
+<div id="container"></div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
